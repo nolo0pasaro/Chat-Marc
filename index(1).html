@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Público</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth-section" class="section active">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="signIn()">Entrar</button>
+        <button onclick="signUp()">Criar Conta</button>
+        <p id="auth-error"></p>
+    </div>
+
+    <div id="chat-section" class="section">
+        <h2>Chat Publico</h2>
+        <button onclick="signOut()" class="logout-btn">Sair</button>
+        <div id="messages-container"></div>
+        <div class="message-input-container">
+            <input type="text" id="message-input" placeholder="Digite sua mensagem">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

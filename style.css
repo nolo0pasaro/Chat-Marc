@@ -1,0 +1,113 @@
+/* Estilos gerais */
+.section {
+    display: none;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.active {
+    display: block;
+}
+
+/* Seção de autenticação */
+#auth-section {
+    text-align: center;
+}
+
+#auth-section input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 250px;
+}
+
+#auth-section button {
+    margin: 5px;
+    padding: 8px 15px;
+}
+
+#auth-error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Seção do chat */
+#chat-section h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.logout-btn {
+    float: right;
+    padding: 5px 10px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Container de mensagens */
+#messages-container {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #f9f9f9;
+}
+
+/* Mensagens individuais */
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.own-message {
+    background-color: #e3f2fd;
+    margin-left: 20%;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.message-text {
+    word-wrap: break-word;
+}
+
+/* Input de mensagem */
+.message-input-container {
+    display: flex;
+    gap: 10px;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357abd;
+}
